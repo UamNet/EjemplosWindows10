@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.2">
+  <CommandSet xml:lang="en-us" Name="watch">
+    <CommandPrefix>Watch </CommandPrefix>
+    <Example>Watch a video</Example>
+    <Command Name="Play">
+      <Example>Watch a video</Example>
+      <ListenFor> [a] video </ListenFor>
+      <Feedback>Playing a video</Feedback>
+      <Navigate Target="index.html"/>
+    </Command>
+  </CommandSet>
+</VoiceCommands>

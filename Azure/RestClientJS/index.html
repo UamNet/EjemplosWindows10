@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>RestClientJS</title>
+    <link href="lib/winjs-4.0.1/css/ui-light.css" rel="stylesheet" />
+    <script src="lib/winjs-4.0.1/js/base.js"></script>
+    <script src="lib/winjs-4.0.1/js/ui.js"></script>
+    <link href="css/default.css" rel="stylesheet" />
+    <script src="js/main.js"></script>
+</head>
+<body class="win-type-body" style="text-align:center;">
+    <div style="margin-top:100px;">
+        <input type="text" width="300" class='win-textbox' id="quoteText"/><button id="send" class="win-button">Enviar</button>
+    </div>
+    <div id="status" class="win-type-body">Prueba a añadir mas citas</div>
+    <button id="refresh" class="win-button" >Refrescar</button>
+
+    <div class="textTemplate" data-win-control="WinJS.Binding.Template" style="display: none">
+        <div class="textItem" data-win-bind="textContent: Text">
+        </div>
+    </div>
+
+    <div id="listView"
+         class="win-selectionstylefilled"
+         data-win-control="WinJS.UI.ListView"
+         data-win-options="{
+            itemDataSource: Sample.ListView.data.dataSource,
+            itemTemplate: select('.textTemplate'),
+            selectionMode: 'none',
+            tapBehavior: 'none',
+            layout: { type: WinJS.UI.ListLayout }
+    }">
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

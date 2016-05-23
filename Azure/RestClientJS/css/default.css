@@ -1,0 +1,23 @@
+﻿body {
+}
+
+/* Template for the items in the ListViews in this sample */       
+.textItem
+{
+    width: 100%;
+    height: 70px;
+    padding: 5px;
+    overflow: hidden;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+    
+/* CSS applied to the ListViews in this sample */
+#listView
+{
+    height: 100%;
+    width:80%;
+}
+

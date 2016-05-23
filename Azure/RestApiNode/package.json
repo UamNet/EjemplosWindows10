@@ -1,0 +1,15 @@
+{
+  "name": "rest-api-node",
+  "version": "0.0.0",
+  "description": "RestApiNode",
+  "main": "app.js",
+  "author": {
+    "name": "Arcadio",
+    "email": ""
+  },
+  "dependencies": {
+    "express": "3.4.4",
+    "jade": "*",
+    "stylus": "*"
+  }
+}

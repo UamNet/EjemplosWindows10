@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>EjemploCortana</title>
+    <!--Para C#, leer https://msdn.microsoft.com/en-us/library/windows/apps/xaml/dn630430(v=win.10).aspx
+        
+        var storageFile = 
+                await Windows.Storage.StorageFile.GetFileFromApplicationUriAsync(
+                 new Uri("ms-appx:///AdventureWorksCommands.xml"));
+        await 
+           Windows.ApplicationModel.VoiceCommands.VoiceCommandDefinitionManager.
+            InstallCommandDefinitionFromStorageFileAsync(storageFile);
+        
+        -->
+    <meta name="msapplication-cortanavcd" content="vcd.xml" />
+    <link href="css/default.css" rel="stylesheet" />
+</head>
+<body>
+    <div>Comandos de cortana instalados!</div>
+    <div>Prueba a decir "watch a video"</div>
+    <script src="js/main.js"></script>
+</body>
+</html>
